@@ -8,7 +8,7 @@ app.get('/app/v1/token', (req, res) => {
     message: 'hit the url',
   });
 });
-const port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log('app is running');
 });

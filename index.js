@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
   res.status(200).send('hello world');
 });
 
-app.get('/api/v1/token', (req, res) => {
+app.get('/api/v1/token', function (req, res) {
   res.status(200).json({
     status: 'success',
     message: 'finally run the node js on the server',
